@@ -1,6 +1,5 @@
 # ResearchNotes 📚
  Do a complete web scan and take notes 📝
-- By santhosh, squad 52 🚀
 
 
 ## Introduction 🌟
