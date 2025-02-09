@@ -6,6 +6,8 @@ import { useSelector } from 'react-redux';
 
 function UserAvatar({avatar, handleAvatarChange}) {
 
+  const {userData} = useSelector(state=>state.userData)
+
 
   return (
     <div className="h-full w-full rounded-full relative border border-black">
@@ -17,7 +19,7 @@ function UserAvatar({avatar, handleAvatarChange}) {
                   alt="user avatar"
                   className="w-full h-full object-cover rounded-full opacity-100 hover:opacity-50"
                 /> :
-                <Avatar height='full' width='full' size='2xl' name={userName} />
+                <Avatar height='full' width='full' size='2xl' name={userData?.userName || ""} />
         }
 
                 <label
